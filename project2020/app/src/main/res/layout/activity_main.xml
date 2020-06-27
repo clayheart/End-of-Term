@@ -6,81 +6,102 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="424dp"
-        android:layout_height="151dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        android:layout_width="420dp"
+        android:layout_height="494dp"
+        android:layout_marginBottom="304dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:srcCompat="@drawable/teal" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="412dp"
-        android:layout_height="137dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:id="@+id/imageView11"
+        android:layout_width="413dp"
+        android:layout_height="349dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/News"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="169dp"
-        android:layout_height="75dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="16dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/News"
-        android:layout_width="169dp"
-        android:layout_height="79dp"
-        android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintHorizontal_bias="0.28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/Happiness"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/teal" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="412dp"
-        android:layout_height="135dp"
-        android:layout_marginTop="184dp"
+        android:id="@+id/imageView12"
+        android:layout_width="431dp"
+        android:layout_height="337dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:srcCompat="@drawable/teal" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="431dp"
+        android:layout_height="285dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/teal" />
+
+    <ProgressBar
+        android:id="@+id/Happiness"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="405dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="408dp"
-        android:layout_height="38dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="7dp"
-        tools:layout_editor_absoluteY="302dp" />
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="446dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Happiness">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="421dp"
-        android:layout_height="40dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="492dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="404dp"
-        android:layout_height="38dp"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="674dp" />
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ridi" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/i" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/cheeto" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/kkk" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="398dp"
+                android:layout_height="209dp"
+                app:srcCompat="@drawable/protesting" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/culous" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
